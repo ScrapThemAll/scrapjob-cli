@@ -29,6 +29,7 @@ const run = (commander) => {
     if (!scrapJson.bots) return console.log([...messages.notFindBot, JSON.stringify(scrapJson, null, 2)].join('\n'));
   } catch(e) {
     commander.outputHelp();
+    return ;
   }
   scrapJson.bots.forEach((bot) => {
     if (!bot.type) return console.log('bot must have a type');
