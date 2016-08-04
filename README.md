@@ -10,17 +10,17 @@ Install Typescript first :
 
     npm install -g typescript
 
-Then install typings :
+Then install dependencies & typings :
 
     npm install typings -g
-    typings install
-
 
 ## Install & Build
 
 Clone the repository and run the bot :
 
     git clone https://github.com/ScrapThemAll/scrapjob-cli.git
+    npm install
+    typings install
     npm run build
     npm start
 
